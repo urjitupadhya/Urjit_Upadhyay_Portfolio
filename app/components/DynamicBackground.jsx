@@ -52,7 +52,7 @@ export default function DynamicBackground() {
       document.removeEventListener('visibilitychange', onVis);
       stop();
     };
-  }, []);
+  }, [prefersReduced]);
 
   // Cursor parallax
   useEffect(() => {
@@ -82,7 +82,7 @@ export default function DynamicBackground() {
     };
     window.addEventListener("pointermove", onMove, { passive: true });
     return () => window.removeEventListener("pointermove", onMove);
-  }, []);
+  }, [prefersReduced]);
 
   // Time-of-day reactive hues
   useEffect(() => {
@@ -132,7 +132,7 @@ export default function DynamicBackground() {
     document.addEventListener('visibilitychange', onVis);
     start();
     return () => { document.removeEventListener('visibilitychange', onVis); stop(); };
-  }, []);
+  }, [prefersReduced]);
 
   return (
     <div

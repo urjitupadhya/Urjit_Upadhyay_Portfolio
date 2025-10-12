@@ -60,7 +60,7 @@ export default function Hero() {
                 </span>
               </div>
               <h1 className="display-4 fw-bold mb-4">
-                I'm <span className="text-gradient">Urjit Upadhyay</span>
+                I&apos;m <span className="text-gradient">Urjit Upadhyay</span>
                 <span className="d-block mt-2" style={{color: 'var(--gray)'}} aria-live="polite">
                   {subtitleTyped}
                   <span style={{opacity: 0.6}}>|

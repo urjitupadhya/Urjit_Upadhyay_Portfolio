@@ -1,6 +1,7 @@
 "use client";
 import { useState } from 'react';
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
 import workshopImgLocal from '../../assets/images/urjitworkshop.jpg';
 
 const SkillsRadar = dynamic(() => import('./SkillsRadar'), { ssr: false });
@@ -24,15 +25,19 @@ function WorkshopModal({ onClose, imgSrc, alt }) {
         padding: 16,
       }}
     >
-      <img
+      <Image
         src={imgSrc}
         alt={alt}
+        width={1200}
+        height={800}
         onClick={(e) => e.stopPropagation()}
         style={{
           maxWidth: '92vw',
           maxHeight: '92vh',
           borderRadius: 14,
           boxShadow: '0 12px 36px rgba(0,0,0,0.5)',
+          height: 'auto',
+          width: 'auto'
         }}
       />
     </div>
@@ -98,10 +103,12 @@ export default function About() {
                         Organised and led a 3-day hands-on Flutter workshop covering setup, widgets, layouts, routing, and state management. Trained participants through interactive sessions, enabling them to build their first Flutter app from scratch.
                       </p>
                       <div>
-                        <img
+                        <Image
                           src={workshopImg}
                           alt={workshopAlt}
                           loading="lazy"
+                          width={workshopImgLocal.width}
+                          height={workshopImgLocal.height}
                           onClick={() => setWorkshopOpen(true)}
                           style={{
                             width: '100%',

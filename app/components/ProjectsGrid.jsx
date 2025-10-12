@@ -58,7 +58,7 @@ export default function ProjectsGrid() {
         <div className="section-title text-center mb-5">
           <h6>Projects</h6>
           <h1 className="text-gradient">Featured Work</h1>
-          <p className="lead" style={{color: 'var(--gray)'}}>Some things I've built recently.</p>
+          <p className="lead" style={{color: 'var(--gray)'}}>Some things I&apos;ve built recently.</p>
         </div>
         <div className="row g-4">
           {[...projects]
