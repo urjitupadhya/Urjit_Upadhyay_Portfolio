@@ -1,0 +1,91 @@
+[
+  {
+    "title": "EVote: Blockchain Voting System",
+    "description": "A revolutionary voting platform that leverages blockchain technology to ensure tamper-proof, transparent elections. Features include real-time vote verification, voter anonymity, and immutable records. Built with Flutter for the frontend and Ethereum smart contracts for the backend.",
+    "image": "assets/images/evote.jpg",
+    "github": "https://github.com/urjitupadhya/evote",
+    "tags": ["Flutter", "Blockchain", "Solidity"],
+    "features": [
+      "Smart contract-based vote recording",
+      "Real-time vote tracking",
+      "Secure voter authentication"
+    ]
+  },
+  {
+    "title": "OneKey-Deploy",
+    "order": 3,
+    "description": "A CLI tool for seamless deployment of applications to multiple cloud platforms with a single command. Supports major cloud providers with automated configuration.",
+    "image": "assets/images/onekey.jpg",
+    "github": "https://github.com/urjitupadhya/onekey-deploy",
+    "install": [
+      "npm install -g pulstack",
+      ">> pulstack init",
+      ">> pulstack deploy --dir site --target vercel"
+    ],
+    "tags": ["Backend", "CLI", "Node.js"],
+    "features": [
+      "Supports Vercel, AWS, , and  netlify",
+      "Automated configuration setup",
+      "Cross-platform compatibility"
+    ]
+  },
+  {
+    "title": "Resume Builder",
+    "order": 1,
+    "description": "A Flutter-based application to create professional resumes with customizable templates and real-time previews. Designed for ease of use with a drag-and-drop interface.",
+    "image": "assets/images/resume_builder.jpg",
+    "github": "https://github.com/urjitupadhya/resume-builder",
+    "hosted": "https://practice-resurrection.vercel.app/",
+    "tags": ["Flutter", "Dart", "UI/UX"],
+    "features": [
+      "Drag-and-drop interface",
+      "PDF export functionality",
+      "Multiple template options"
+    ]
+  },
+  {
+    "title": "Career Finder App",
+    "description": "An AI-powered career guidance application that matches users with ideal career paths based on their skills, interests, and personality. The app features a comprehensive assessment system and provides detailed career roadmaps with resource recommendations.",
+    "image": "https://raw.githubusercontent.com/urjitupadhya/Carrer_Finder_App/carrerapploginpageurjit/assets/images/applogo.jpg",
+    "github": "https://github.com/urjitupadhya/Carrer_Finder_App",
+    "tags": ["Flutter", "Firebase", "AI", "Recommendation Engine"],
+    "features": [
+      "Personalized career assessments",
+      "Skill gap analysis",
+      "Learning resource integration",
+      "Progress tracking"
+    ]
+  },
+  {
+    "title": "BeFocused Chrome Extension",
+    "order": 2,
+    "description": "A productivity powerhouse that helps users stay focused with distraction blocking, focus sprints, and activity analytics. Provides smart nudges and productivity insights based on your work patterns.",
+    "image": "https://raw.githubusercontent.com/ShubhVarshney30/BeFocused/main/Assets/dark_mode.jpg",
+    "github": "https://github.com/ShubhVarshney30/BeFocused",
+    "hosted": "https://befocusedweb.vercel.app/",
+    "tags": ["Chrome Extension", "JavaScript", "AI", "Productivity"],
+    "features": [
+      "AI-powered distraction detection",
+      "Focus timer with Pomodoro",
+      "Activity analytics dashboard",
+      "Cross-device sync"
+    ]
+  },
+  {
+    "title": "GDGC AMU Hosted Backend",
+    "description": "A robust Node.js backend hosted on Render, supporting a women safety app with Google-based authentication, real-time location APIs, and gamified user engagement. Features include secure login/signup with Google OAuth, SOS request handling, AI-based activity flags, and gamification endpoints for tracking user points, rewards, and safety streaks.",
+    "image": "assets/images/gdgc.jpg",
+    "github": "https://github.com/urjitupadhya/GDGCAMUREPOO",
+    "hosted": "https://gdgcamurepoobackend.onrender.com/",
+    "tags": ["Node.js", "Express", "Google OAuth", "MongoDB", "Render", "REST API", "Gamification"],
+    "features": [
+      "Google OAuth login/signup",
+      "User authentication and token-based access",
+      "SOS and location update APIs",
+      "AI-triggered danger detection endpoints",
+      "Gamification APIs (points, rewards, streaks)",
+      "Secure REST API architecture",
+      "Hosted live on Render"
+    ]
+  }
+]

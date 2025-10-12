@@ -1,0 +1,78 @@
+[
+  {
+    "title": "EVote: Blockchain Voting System",
+    "image": "assets/images/evote.png",
+    "description": "A decentralized voting system built on Ethereum blockchain, ensuring transparency and security in elections.",
+    "tags": ["Blockchain", "Flutter", "Solidity"],
+    "github": "https://github.com/urjitupadhya/evote",
+    "features": [
+      "Smart contract-based vote recording",
+      "Real-time vote tracking",
+      "Secure voter authentication"
+    ]
+  },
+  {
+    "title": "OneKey-Deploy",
+    "image": "assets/images/onekey-deploy.png",
+    "description": "A CLI tool for seamless deployment of applications to multiple cloud platforms with a single command.",
+    "tags": ["Backend", "CLI", "Node.js"],
+    "github": "https://github.com/urjitupadhya/onekey-deploy",
+    "features": [
+      "Supports AWS, Azure, and GCP",
+      "Automated configuration setup",
+      "Cross-platform compatibility"
+    ],
+    "hosted": "https://onekey-deploy-demo.com"
+  },
+  {
+    "title": "Resume Builder",
+    "image": "assets/images/resume-builder.png",
+    "description": "A Flutter-based application to create professional resumes with customizable templates and real-time previews.",
+    "tags": ["Flutter", "Dart", "UI/UX"],
+    "github": "https://github.com/urjitupadhya/resume-builder",
+    "features": [
+      "Drag-and-drop interface",
+      "PDF export functionality",
+      "Multiple template options"
+    ],
+    "hosted": "https://resume-builder-demo.com"
+  },
+  {
+    "title": "Career Finder App",
+    "image": "assets/images/career-finder.png",
+    "description": "A Flutter-based AI-driven career guidance tool with skill assessments and personalized job recommendations.",
+    "tags": ["Flutter", "AI", "Firebase"],
+    "github": "https://github.com/urjitupadhya/Carrer_Finder_App",
+    "features": [
+      "AI-powered career path suggestions",
+      "Skill assessment quizzes",
+      "Firebase-backed user authentication"
+    ]
+  },
+  {
+    "title": "GDGC AMU Backend",
+    "image": "assets/images/gdgc-backend.png",
+    "description": "A Node.js/Express backend for a women safety app with OAuth, SOS functionality, and gamification features.",
+    "tags": ["Backend", "Node.js", "MongoDB"],
+    "github": "https://github.com/urjitupadhya/GDGCAMUREPOO",
+    "features": [
+      "Google OAuth integration",
+      "Real-time SOS alerts",
+      "Gamified user engagement"
+    ],
+    "hosted": "https://gdgcamurepoobackend.onrender.com/"
+  },
+  {
+    "title": "BeFocused Chrome Extension",
+    "description": "A productivity powerhouse that helps users stay focused with distraction blocking, focus sprints, and activity analytics. Provides smart nudges and productivity insights based on your work patterns.",
+    "image": "https://raw.githubusercontent.com/ShubhVarshney30/BeFocused/main/Assets/dark_mode.jpg",
+    "github": "https://github.com/ShubhVarshney30/BeFocused",
+    "tags": ["Chrome Extension", "JavaScript", "AI", "Productivity"],
+    "features": [
+      "AI-powered distraction detection",
+      "Focus timer with Pomodoro",
+      "Activity analytics dashboard",
+      "Cross-device sync"
+    ]
+  }
+]

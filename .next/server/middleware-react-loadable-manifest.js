@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"app\\\\components\\\\About.jsx -> ./SkillsRadar\":{\"id\":\"app\\\\components\\\\About.jsx -> ./SkillsRadar\",\"files\":[\"static/chunks/_app-pages-browser_app_components_SkillsRadar_jsx.js\"]}}"
