@@ -5,7 +5,7 @@ import profileImg from '../../assets/images/urjit-upadhyay-profiles.jpg';
 
 export default function Hero() {
   const badgeFull = "👋 Welcome to my portfolio";
-  const subtitleFull = "Flutter Developer · Backend Engineer · Blockchain Enthusiast";
+  const subtitleFull = "Flutter Developer · MERN Developer · Backend Engineer · Blockchain Enthusiast";
   const [badgeTyped, setBadgeTyped] = useState("");
   const [subtitleTyped, setSubtitleTyped] = useState("");
 

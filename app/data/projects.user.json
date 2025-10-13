@@ -12,35 +12,30 @@
     ]
   },
   {
-    "title": "OneKey-Deploy",
+    "title": "OneKey-Deploy — One-command Deployment CLI",
     "order": 3,
-    "description": "A CLI tool for seamless deployment of applications to multiple cloud platforms with a single command. Supports major cloud providers with automated configuration.",
+    "description": "Lightweight Node.js CLI (~300 LOC) that auto-detects React/Next.js/static projects and deploys to Vercel, Netlify, or Fly.io in one command.",
     "image": "assets/images/onekey.jpg",
-    "github": "https://github.com/urjitupadhya/onekey-deploy",
-    "install": [
-      "npm install -g pulstack",
-      ">> pulstack init",
-      ">> pulstack deploy --dir site --target vercel"
-    ],
-    "tags": ["Backend", "CLI", "Node.js"],
+    "github": "https://github.com/urjitupadhya/OneKey-Deploy",
+    "tags": ["JavaScript", "Node.js", "CLI"],
     "features": [
-      "Supports Vercel, AWS, , and  netlify",
-      "Automated configuration setup",
-      "Cross-platform compatibility"
+      "Auto-detects framework (React/Next.js/static)",
+      "Deploys to Vercel, Netlify, and Fly.io",
+      "Modular routines with robust error handling"
     ]
   },
   {
     "title": "Resume Builder",
     "order": 1,
-    "description": "A Flutter-based application to create professional resumes with customizable templates and real-time previews. Designed for ease of use with a drag-and-drop interface.",
+    "description": "AI-assisted resume/portfolio builder with live preview, ATS scoring, GitHub import, and template PDF export. Deployed on Vercel with responsive dark mode.",
     "image": "assets/images/resume_builder.jpg",
-    "github": "https://github.com/urjitupadhya/resume-builder",
+    "github": "https://github.com/ShubhVarshney30/PracticeResurrection",
     "hosted": "https://practice-resurrection.vercel.app/",
-    "tags": ["Flutter", "Dart", "UI/UX"],
+    "tags": ["Next.js", "TypeScript", "Firebase", "Tailwind CSS", "React Hook Form", "NextAuth.js"],
     "features": [
-      "Drag-and-drop interface",
-      "PDF export functionality",
-      "Multiple template options"
+      "Live preview and template-based PDF export",
+      "ATS-compatibility scoring",
+      "GitHub project import"
     ]
   },
   {

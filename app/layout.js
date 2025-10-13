@@ -4,13 +4,13 @@ import DynamicBackground from './components/DynamicBackground';
 import NavBar from './components/NavBar';
 
 export const metadata = {
-  title: 'Urjit Upadhyay - Flutter Developer | Tech Innovator',
+  title: 'Urjit Upadhyay - Flutter & MERN Developer | Backend | Blockchain',
   description:
-    'Portfolio of Urjit Upadhyay, Flutter Developer and Tech Innovator specializing in mobile apps and blockchain solutions.',
-  keywords: ['Urjit Upadhyay', 'Flutter', 'Blockchain', 'Developer', 'Portfolio'],
+    'Portfolio of Urjit Upadhyay — Flutter Developer, MERN Developer, Backend Engineer, and Blockchain Enthusiast. Building cross-platform apps, scalable backends, and web apps.',
+  keywords: ['Urjit Upadhyay', 'Flutter', 'MERN', 'Backend', 'Blockchain', 'Developer', 'Portfolio'],
   metadataBase: new URL('http://localhost:3000'),
   openGraph: {
-    title: 'Urjit Upadhyay - Flutter Developer',
+    title: 'Urjit Upadhyay - Flutter & MERN Developer',
     // Provide a valid public image path or absolute URL if available
   },
   icons: {
