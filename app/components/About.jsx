@@ -81,24 +81,75 @@ export default function About() {
                 <div className="timeline">
                   <div className="timeline-item">
                     <div className="timeline-content">
-                      <h5>2024 - Present</h5>
-                      <h6 className="text-primary">B.Tech in Computer Engineering</h6>
-                      <p className="text-gray">ZHCET, AMU | CGPA: 8.1/10</p>
+                      <h5 style={{
+                        background: 'linear-gradient(135deg, #a78bfa 0%, #60a5fa 50%, #22d3ee 100%)',
+                        WebkitBackgroundClip: 'text',
+                        backgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        color: 'transparent',
+                        fontWeight: 800
+                      }}>2024 - Present</h5>
+                      <h6 className="text-primary" style={{
+                        background: 'linear-gradient(135deg, #a78bfa 0%, #60a5fa 50%, #22d3ee 100%)',
+                        WebkitBackgroundClip: 'text',
+                        backgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        color: 'transparent'
+                      }}>B.Tech in Computer Engineering</h6>
+                      <p className="text-gray" style={{
+                        background: 'linear-gradient(135deg, #a78bfa 0%, #60a5fa 50%, #22d3ee 100%)',
+                        WebkitBackgroundClip: 'text',
+                        backgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        color: 'transparent'
+                      }}>ZHCET, AMU | CGPA: 8.1/10</p>
                     </div>
                   </div>
 
                   <div className="timeline-item">
                     <div className="timeline-content">
-                      <h5>2021 - 2024</h5>
-                      <h6 className="text-primary">Diploma in Computer Engineering</h6>
-                      <p className="text-gray">University Polytechnic | 9.97</p>
+                      <h5 style={{
+                        background: 'linear-gradient(135deg, #a78bfa 0%, #60a5fa 50%, #22d3ee 100%)',
+                        WebkitBackgroundClip: 'text',
+                        backgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        color: 'transparent',
+                        fontWeight: 800
+                      }}>2021 - 2024</h5>
+                      <h6 className="text-primary" style={{
+                        background: 'linear-gradient(135deg, #a78bfa 0%, #60a5fa 50%, #22d3ee 100%)',
+                        WebkitBackgroundClip: 'text',
+                        backgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        color: 'transparent'
+                      }}>Diploma in Computer Engineering</h6>
+                      <p className="text-gray" style={{
+                        background: 'linear-gradient(135deg, #a78bfa 0%, #60a5fa 50%, #22d3ee 100%)',
+                        WebkitBackgroundClip: 'text',
+                        backgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        color: 'transparent'
+                      }}>University Polytechnic | 9.97</p>
                     </div>
                   </div>
 
                   <div className="timeline-item">
                     <div className="timeline-content">
-                      <h5>2025</h5>
-                      <p className="text-gray mb-2">TPO Auditorium, ZHCET</p>
+                      <h5 style={{
+                        background: 'linear-gradient(135deg, #a78bfa 0%, #60a5fa 50%, #22d3ee 100%)',
+                        WebkitBackgroundClip: 'text',
+                        backgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        color: 'transparent',
+                        fontWeight: 800
+                      }}>2025</h5>
+                      <p className="text-gray mb-2" style={{
+                        background: 'linear-gradient(135deg, #a78bfa 0%, #60a5fa 50%, #22d3ee 100%)',
+                        WebkitBackgroundClip: 'text',
+                        backgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
+                        color: 'transparent'
+                      }}>TPO Auditorium, ZHCET</p>
                       <p className="text-gray mb-3">
                         Organised and led a 3-day hands-on Flutter workshop covering setup, widgets, layouts, routing, and state management. Trained participants through interactive sessions, enabling them to build their first Flutter app from scratch.
                       </p>

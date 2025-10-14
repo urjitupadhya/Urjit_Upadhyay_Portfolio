@@ -12,7 +12,14 @@ export default function Services() {
             <div className="card service-card h-100 border-0">
               <div className="card-body p-4 text-center">
                 <div className="iconbox mx-auto"><i className="las la-mobile" /></div>
-                <h4 className="mb-3">Flutter Development</h4>
+                <h4 className="mb-3" style={{
+                  background: 'linear-gradient(135deg, #a78bfa 0%, #60a5fa 50%, #22d3ee 100%)',
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  color: 'transparent',
+                  fontWeight: 800
+                }}>Flutter Development</h4>
                 <p style={{color:'var(--gray)'}}>Cross-platform apps with clean architecture and animations.</p>
                 <div className="mt-4">
                   <span className="badge">Dart</span>
@@ -26,7 +33,14 @@ export default function Services() {
             <div className="card service-card h-100 border-0">
               <div className="card-body p-4 text-center">
                 <div className="iconbox mx-auto"><i className="las la-server" /></div>
-                <h4 className="mb-3">Backend Development</h4>
+                <h4 className="mb-3" style={{
+                  background: 'linear-gradient(135deg, #f472b6 0%, #fb7185 50%, #f59e0b 100%)',
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  color: 'transparent',
+                  fontWeight: 800
+                }}>Backend Development</h4>
                 <p style={{color:'var(--gray)'}}>Robust, scalable APIs with Node.js, Firebase, and MongoDB.</p>
                 <div className="mt-4">
                   <span className="badge">Node.js</span>
@@ -40,7 +54,14 @@ export default function Services() {
             <div className="card service-card h-100 border-0">
               <div className="card-body p-4 text-center">
                 <div className="iconbox mx-auto"><i className="las la-shield-alt" /></div>
-                <h4 className="mb-3">Secure Solutions</h4>
+                <h4 className="mb-3" style={{
+                  background: 'linear-gradient(135deg, #34d399 0%, #06b6d4 50%, #3b82f6 100%)',
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  color: 'transparent',
+                  fontWeight: 800
+                }}>Secure Solutions</h4>
                 <p style={{color:'var(--gray)'}}>Blockchain, encryption, and security best practices.</p>
                 <div className="mt-4">
                   <span className="badge">Blockchain</span>
