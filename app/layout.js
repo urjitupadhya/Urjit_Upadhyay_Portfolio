@@ -15,6 +15,9 @@ export const metadata = {
   },
   icons: {
     icon: '/favicon.ico'
+  },
+  verification: {
+    google: 'dum5Ja2KmpYXm-bpGOf5Tp4o50VABihn6xabodwYZ2Q'
   }
 };
 
@@ -31,3 +34,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
