@@ -1,5 +1,22 @@
 [
   {
+    "title": "Erpica - Enterprise Resource Planning UI",
+    "order": 0,
+    "description": "A modern, responsive Enterprise Resource Planning (ERP) system interface designed to streamline business operations and enhance organizational efficiency. This comprehensive business management platform integrates multiple core functions into a unified, user-friendly interface with real-time dashboards and automated workflows.",
+    "image": "assets/images/erpica.jpeg",
+    "github": "https://github.com/urjitupadhya/Erpica",
+    "hosted": "https://erpicauifinal.vercel.app/",
+    "tags": ["React", "Next.js", "Tailwind CSS", "ERP", "Dashboard", "UI/UX"],
+    "features": [
+      "Centralized dashboard with real-time KPIs",
+      "Resource management and inventory tracking",
+      "Process automation across departments",
+      "Responsive design for all devices",
+      "Modular architecture for scalability",
+      "Intuitive UI/UX for quick adoption"
+    ]
+  },
+  {
     "title": "EVote: Blockchain Voting System",
     "description": "A revolutionary voting platform that leverages blockchain technology to ensure tamper-proof, transparent elections. Features include real-time vote verification, voter anonymity, and immutable records. Built with Flutter for the frontend and Ethereum smart contracts for the backend.",
     "image": "assets/images/evote.jpg",

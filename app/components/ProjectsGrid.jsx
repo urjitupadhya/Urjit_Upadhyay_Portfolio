@@ -1,7 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
-import projects from "../data/projects.user.json";
+import localProjects from "../data/projects.user.json";
+import firebaseService from "../../lib/firebaseService";
 
 // 🖼 Import images
 import evoteImg from "../../assets/images/evote.jpg";
@@ -27,6 +28,16 @@ function resolveProjectImage(path) {
 export default function ProjectsGrid() {
   const [toast, setToast] = useState(null);
   const [hovered, setHovered] = useState(null); // track hovered card index
+  const [projects, setProjects] = useState(localProjects);
+  const [loading, setLoading] = useState(false); // Set to false to show projects immediately
+
+  // 🔄 Firebase sync temporarily disabled - using local data only
+  // useEffect(() => {
+  //   // Firebase initialization code commented out
+  // }, []);
+
+  console.log('📊 Projects being displayed:', projects.length);
+  console.log('📋 Project titles:', projects.map(p => p.title));
 
   // 🌀 Tilt disabled: keep cards static for cleaner background
   const tiltMove = () => {};
@@ -45,6 +56,36 @@ export default function ProjectsGrid() {
       console.error("Copy failed", e);
     }
   };
+
+  // 🔄 Real-time project update function
+  const updateProject = async (projectIndex, updatedData) => {
+    try {
+      const updatedProjects = [...projects];
+      updatedProjects[projectIndex] = { ...updatedProjects[projectIndex], ...updatedData };
+      await firebaseService.saveData('projects', updatedProjects);
+      setToast("Project updated in real-time");
+      setTimeout(() => setToast(null), 2000);
+    } catch (error) {
+      console.error('Error updating project:', error);
+      setToast("Failed to update project");
+      setTimeout(() => setToast(null), 2000);
+    }
+  };
+
+  if (loading) {
+    return (
+      <section id="projects" className="section">
+        <div className="container">
+          <div className="text-center">
+            <div className="spinner-border text-primary" role="status">
+              <span className="visually-hidden">Loading projects...</span>
+            </div>
+            <p className="mt-3">Loading projects from Firebase...</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <>

@@ -1,6 +1,6 @@
 import ThemeToggle from '../components/ThemeToggle';
 import AOSInit from '../components/AOSInit';
-import ProjectsGrid from '../components/ProjectsGrid';
+import ProjectsGridBasic from '../components/ProjectsGridBasic';
 
 export const metadata = {
   title: 'Projects | Urjit Upadhyay',
@@ -11,7 +11,7 @@ export default function ProjectsPage() {
     <main>
       <ThemeToggle />
       <AOSInit />
-      <ProjectsGrid />
+      <ProjectsGridBasic />
     </main>
   );
 }
