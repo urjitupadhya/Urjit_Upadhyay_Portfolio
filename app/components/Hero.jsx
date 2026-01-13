@@ -1,94 +1,109 @@
 "use client";
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import profileImg from '../../assets/images/urjit-upadhyay-profiles.jpg';
+import MagneticButton from './ui/MagneticButton';
 
 export default function Hero() {
-  const badgeFull = "👋 Welcome to my portfolio";
-  const subtitleFull = "Flutter Developer · MERN Developer · Backend Engineer · Blockchain Enthusiast";
-  const [badgeTyped, setBadgeTyped] = useState("");
-  const [subtitleTyped, setSubtitleTyped] = useState("");
+  const badgeText = "👋 Welcome to my portfolio";
+  const subtitleText = "Flutter Developer · MERN Developer · Backend Engineer · Blockchain Enthusiast";
 
-  useEffect(() => {
-    let i = 0;
-    let j = 0;
-    let badgeTimer;
-    let subtitleTimer;
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+        delayChildren: 0.3,
+      }
+    }
+  };
 
-    // Type badge first
-    const typeBadge = () => {
-      badgeTimer = setInterval(() => {
-        if (i <= badgeFull.length) {
-          setBadgeTyped(badgeFull.slice(0, i));
-          i += 1;
-        } else {
-          clearInterval(badgeTimer);
-          // small pause then type subtitle
-          setTimeout(() => typeSubtitle(), 200);
-        }
-      }, 40);
-    };
-
-    const typeSubtitle = () => {
-      subtitleTimer = setInterval(() => {
-        if (j <= subtitleFull.length) {
-          setSubtitleTyped(subtitleFull.slice(0, j));
-          j += 1;
-        } else {
-          clearInterval(subtitleTimer);
-        }
-      }, 28);
-    };
-
-    typeBadge();
-
-    return () => {
-      clearInterval(badgeTimer);
-      clearInterval(subtitleTimer);
-    };
-  }, []);
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+  };
 
   return (
-    <section id="home" className="hero section">
+    <section id="home" className="hero section overflow-hidden">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-7">
-            <div className="hero-content">
-              <div className="hero-badge mb-4" aria-live="polite">
-                {badgeTyped}
-                <span style={{opacity: 0.6}}>|
-                </span>
-              </div>
-              <h1 className="display-4 fw-bold mb-4">
+            <motion.div
+              className="hero-content"
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              <motion.div
+                className="hero-badge mb-4"
+                variants={itemVariants}
+              >
+                {badgeText}
+              </motion.div>
+
+              <motion.h1
+                className="display-4 fw-bold mb-4"
+                variants={itemVariants}
+              >
                 I&apos;m <span className="text-gradient">Urjit Upadhyay</span>
-                <span className="d-block mt-2" style={{color: 'var(--gray)'}} aria-live="polite">
-                  {subtitleTyped}
-                  <span style={{opacity: 0.6}}>|
-                  </span>
+                <span className="d-block mt-2" style={{ color: 'var(--gray)', fontSize: '1.25rem', fontWeight: 400 }}>
+                  {subtitleText}
                 </span>
-              </h1>
-              <p className="lead mb-4" style={{color: 'var(--gray)'}}>
+              </motion.h1>
+
+              <motion.p
+                className="lead mb-4"
+                style={{ color: 'var(--gray)' }}
+                variants={itemVariants}
+              >
                 I craft <span className="text-gradient">beautiful cross-platform apps</span> with Flutter and build <span className="text-gradient">scalable backend systems</span>.
-              </p>
-              <div className="d-flex gap-3">
-                <a className="btn btn-brand" href="#projects">View Projects</a>
-                <a className="btn btn-outline-brand" href="#contact">Contact</a>
-              </div>
-            </div>
+              </motion.p>
+
+              <motion.div
+                className="d-flex gap-3"
+                variants={itemVariants}
+              >
+                <MagneticButton>
+                  <a className="btn btn-brand" href="#projects">View Projects</a>
+                </MagneticButton>
+                <MagneticButton>
+                  <a className="btn btn-outline-brand" href="#contact">Contact</a>
+                </MagneticButton>
+              </motion.div>
+            </motion.div>
           </div>
           <div className="col-lg-5 text-center mt-5 mt-lg-0">
-            <div className="avatar-tech mx-auto" style={{width: 320}}>
-              <div className="avatar-inner">
+            <motion.div
+              className="avatar-tech mx-auto"
+              style={{ width: 320 }}
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+            >
+              <motion.div
+                className="avatar-inner"
+                animate={{
+                  y: [0, -15, 0],
+                  rotate: [0, 2, -2, 0]
+                }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              >
                 <Image
                   src={profileImg}
                   alt="Urjit Upadhyay profile"
                   fill
                   sizes="(max-width: 768px) 280px, 320px"
-                  style={{objectFit: 'cover'}}
+                  style={{ objectFit: 'cover' }}
                   priority
                 />
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       </div>

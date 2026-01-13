@@ -11,6 +11,7 @@ export default function Footer() {
             <div className="social-icons d-flex justify-content-center justify-content-md-end gap-2">
               <a href="https://www.linkedin.com/in/urjit-upadhyay-049428236" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i className="lab la-linkedin-in" /></a>
               <a href="https://github.com/urjitupadhya" target="_blank" rel="noreferrer" aria-label="GitHub"><i className="lab la-github" /></a>
+              <a href="https://x.com/Urjitupadhyay2" target="_blank" rel="noreferrer" aria-label="X (Twitter)"><i className="lab la-twitter" /></a>
               <a href="https://leetcode.com/u/UrjitUpadhyay/" target="_blank" rel="noreferrer" aria-label="LeetCode"><i className="las la-code" /></a>
               <a href="https://instagram.com/urjitupadhyay" target="_blank" rel="noreferrer" aria-label="Instagram"><i className="lab la-instagram" /></a>
               <a href="mailto:gm4175urjitupadhyay@gmail.com" target="_blank" rel="noreferrer" aria-label="Email"><i className="las la-envelope" /></a>

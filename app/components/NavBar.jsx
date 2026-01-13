@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
+import MagneticButton from "./ui/MagneticButton";
 
 const links = [
   { href: "/", label: "Home" },
@@ -60,20 +61,24 @@ export default function NavBar() {
           {links.map(({ href, label }) => {
             const active = pathname === href;
             return (
-              <Link key={href} href={href} className={`nav-link ${active ? "active" : ""}`}>
-                {label}
-              </Link>
+              <MagneticButton key={href} distance={0.2}>
+                <Link href={href} className={`nav-link ${active ? "active" : ""}`}>
+                  {label}
+                </Link>
+              </MagneticButton>
             );
           })}
-          <a
-            className="nav-cta btn-code"
-            href="/assets/URJIT_UPADHYAY_RESUME.pdf"
-            target="_blank"
-            rel="noreferrer noopener"
-            title="View Resume PDF"
-          >
-            <i className="las la-external-link-alt" /> Resume PDF
-          </a>
+          <MagneticButton distance={0.25}>
+            <a
+              className="nav-cta btn-code"
+              href="/assets/URJIT_UPADHYAY_RESUME.pdf"
+              target="_blank"
+              rel="noreferrer noopener"
+              title="View Resume PDF"
+            >
+              <i className="las la-external-link-alt" /> Resume PDF
+            </a>
+          </MagneticButton>
         </nav>
       </div>
     </header>
